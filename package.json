@@ -1,0 +1,33 @@
+{
+  "name": "readme-guardian",
+  "version": "1.0.0",
+  "description": "README Guardian is a repository-readiness checker that validates README quality, contributor entry points, and open-source essentials for GitHub repositories.",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FmNm78/readme-guardian.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FmNm78/readme-guardian/issues"
+  },
+  "homepage": "https://github.com/FmNm78/readme-guardian#readme",
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
+  }
+}
