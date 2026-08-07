@@ -28,5 +28,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      # --strict would also fail the build on warning-level rules
+      # (codeowners-exists, branch-protection-exists, funding-exists),
+      # which this repo hasn't configured on purpose. --strict fits repos
+      # with full governance config in place; this CI only blocks on
+      # error-level rule failures.
       - name: Run readme-guardian check
-        run: node dist/index.js check . --strict
+        run: node dist/index.js check .
