@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { runChecks } from "./core/runChecks";
 import { evaluateStatus } from "./core/evaluateStatus";
 import { allRules } from "./rules";
